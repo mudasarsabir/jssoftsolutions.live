@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snappy</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- <link rel="stylesheet" href="assests/css/lightgallery.css"> -->
+
+</head>
+
+<body>
+
+    <div id="main">
+
+        <header class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="d-none d-md-block col-md-4">
+                        <span>
+                            <a href="https://www.facebook.com">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.twitter.com">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.pinterest.com">
+                                <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.gmail.com">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="col-6 col-md-4 text-md-center">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-md-4">
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="services.html">Our Services</a>
+                            <a href="portfolio.html">Portfolio</a>
+                            <a href="technology.html">Technologies</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="blog.html">Read Blog</a>
+                        </div>
+                        <button class='slide-menu float-right' onclick="openNav()">
+                            <span class="medium"></span>
+                            <span class="small"></span>
+                            <span class="large"></span>
+                            <span class="small"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </header>
+
+        <div id="carouselExampleIndicators" class="banner carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background: url(images/banner.jpg);background-size:cover;background-repeat: no-repeat;">
+                    <div class="layer">
+                        <div class="container" data-aos="zoom-in" data-aos-duration="800">
+                            <h4>Jessica Anderson</h4>
+                            <span>+</span>
+                            <h4>Andrew Susan</h4>
+                            <a href="#">marriage</a>
+                            <span>february 23, 2015</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background: url(images/banner_2.jpg);background-size:cover;background-repeat: no-repeat;">
+                    <div class="layer">
+                        <div class="container">
+                            <h4>Christopher John</h4>
+                            <span>+</span>
+                            <h4>Andrea kristen</h4>
+                            <a href="#">Engagement</a>
+                            <span>june 26, 2015</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background: url(images/banner_3.jpg);background-size:cover;background-repeat: no-repeat;">
+                    <div class="layer">
+                        <div class="container">
+                            <h4>Paul Stirling</h4>
+                            <span>+</span>
+                            <h4>Maria Nolan</h4>
+                            <a href="#">reception</a>
+                            <span>february 23, 2015</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background: url(images/banner_2.jpg);background-size:cover;background-repeat: no-repeat;">
+                    <div class="layer">
+                        <div class="container">
+                            <h4>Christopher John</h4>
+                            <span>+</span>
+                            <h4>Andrea kristen</h4>
+                            <a href="#">Engagement</a>
+                            <span>june 26, 2015</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="indicators">
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <img src="images/left.png" alt="left-indicator">
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <img src="images/right.png" alt="left-indicator">
+                        </a>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 
+        <section class="banner">
+            <div class="layer">
+                <div class="container">
+                    <div id="carouselExampleIndicators" data-aos="fade-up" data-aos-duration="800" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="background: url(images/banner.jpg);">
+                                <h4>Jessica Anderson</h4>
+                                <span>+</span>
+                                <h4>Andrew Susan</h4>
+                                <a href="#">marriage</a>
+                                <span>february 23, 2015</span>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>Christopher John</h4>
+                                <span>+</span>
+                                <h4>Andrea kristen</h4>
+                                <a href="#">Engagement</a>
+                                <span>june 26, 2015</span>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>Paul Stirling</h4>
+                                <span>+</span>
+                                <h4>Maria Nolan</h4>
+                                <a href="#">reception</a>
+                                <span>february 23, 2015</span>
+                            </div>
+
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <img src="images/left.png" alt="left-indicator">
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <img src="images/right.png" alt="left-indicator">
+                        </a>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5" data-aos="fade-up" data-aos-duration="800">
+                        <span>About Snappy Theme</span>
+                        <h3>Snappy Is A Beautiful Theme For Photographers</h3>
+                        <h4>With Clean And Easy Functionalities, Its A Multi Purpose Theme</h4>
+                        <a href="portfolio.html">view portfolio</a>
+                    </div>
+                    <div class="col-lg-7" data-aos="fade-up" data-aos-duration="800">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                            type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <p>dummy text ever since the 1500s, browse text of the printing and and simplistic wordpress t se text
+                            of the and typesettingan unknown printer took a galley of type and..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="counter">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <h6 class="mycounter" data-counter-time="1000" data-counter-delay="0">07</h6>
+                            <span>years completed</span>
+                        </li>
+                        <li>
+                            <h6 class="mycounter" data-counter-time="1000" data-counter-delay="0">176</h6>
+                            <span>client list</span>
+                        </li>
+                        <li>
+                            <h6 class="mycounter" data-counter-time="1000" data-counter-delay="0">598</h6>
+                            <span>projects done</span>
+                        </li>
+                        <li>
+                            <h6 class="mycounter" data-counter-time="1000" data-counter-delay="0">45</h6>
+                            <span>awards received</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5" data-aos="fade-up" data-aos-duration="800">
+                        <span>Our Skills and Expertises</span>
+                        <h3>See Where We Really Stand In The Different Generes of Photography</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                            type and scrambled it to make a type specimen book.</p>
+                    </div>
+
+                    <div class="col-lg-7 progress-text" data-aos="fade-up" data-aos-duration="800">
+                        <div class="p-text">
+                            <span>wedding Photography</span>
+                        </div>
+                        <div class="progress" style="height:6px;">
+                            <div class="progress-bar" style="width:75%;height:6px" data-aos="fade-right" data-aos-duration="800">
+                            </div>
+                            <span class="one" data-aos="fade-right" data-aos-duration="800"></span>
+                        </div>
+
+                        <div class="p-text">
+                            <span>Portraits Photography</span>
+                        </div>
+                        <div class="progress" style="height:6px;">
+                            <div class="progress-bar" style="width:90%;height:6px" data-aos="fade-right" data-aos-duration="800"></div>
+                            <span class="two" data-aos="fade-right" data-aos-duration="800"></span>
+                        </div>
+
+                        <div class="p-text">
+                            <span>Nature Photography</span>
+                        </div>
+                        <div class="progress" style="height:6px;">
+                            <div class="progress-bar" style="width:60%;height:6px" data-aos="fade-right" data-aos-duration="800"></div>
+                            <span class="three" data-aos="fade-right" data-aos-duration="800"></span>
+                        </div>
+
+                        <div class="p-text">
+                            <span>Post Processing</span>
+                        </div>
+                        <div class="progress" style="height:6px;">
+                            <div class="progress-bar" style="width:80%;height:6px" data-aos="fade-right" data-aos-duration="800"></div>
+                            <span class="four" data-aos="fade-right" data-aos-duration="800"></span>
+                        </div>
+
+                        <div class="p-text">
+                            <span>Street Photography</span>
+                        </div>
+                        <div class="progress" style="height:6px;">
+                            <div class="progress-bar" style="width:75%;height:6px" data-aos="fade-right" data-aos-duration="800"></div>
+                            <span class="five" data-aos="fade-right" data-aos-duration="800"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio-heading" data-aos="zoom-in" data-aos-duration="800">
+                    <h3>check our stunning portfolio</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since...</p>
+                </div>
+                <ul class="row">
+                    <li class="col-md-6 col-lg-5 m-b-50" data-aos="fade-up" data-aos-duration="800">
+                        <div class="pic-overlay portone">
+                            <a href="images/indian.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                                <figure style="background: url(images/indian.jpg);"></figure>
+                                <div class="pic-text">
+                                    <span>john & maria wedding
+                                        <br/>
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    </span>
+
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-7 m-b-50" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="pic-overlay porttwo">
+                            <a href="images/nosering.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                                <figure style="background: url(images/nosering.jpg);"></figure>
+                                <div class="pic-text">
+                                    <span class="big">Kyle & Johnson Engagement
+                                        <br/>
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    </span>
+
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-7 m-b-50" data-aos="fade-up" data-aos-duration="800">
+                        <div class="pic-overlay portthree">
+                            <a href="images/engage.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                                <figure style="background: url(images/engage.jpg);"></figure>
+                                <div class="pic-text">
+                                    <span class="big">Kyle & Johnson Engagement
+                                        <br/>
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    </span>
+
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-5 m-b-50" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="pic-overlay portfour">
+                            <a href="images/cover.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                                <figure style="background: url(images/cover.jpg);"></figure>
+                                <div class="pic-text">
+                                    <span>john & maria wedding
+                                        <br/>
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    </span>
+
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-5 m-b-50" data-aos="fade-up" data-aos-duration="800">
+                        <div class="pic-overlay portone">
+                            <a href="images/indian.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                                <figure style="background: url(images/indian.jpg);"></figure>
+                                <div class="pic-text">
+                                    <span>john & maria wedding
+                                        <br/>
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    </span>
+
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-7 m-b-50" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="pic-overlay porttwo">
+                            <a href="images/nosering.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+                                <figure style="background: url(images/nosering.jpg);"></figure>
+                                <div class="pic-text">
+                                    <span class="big">Kyle & Johnson Engagement
+                                        <br/>
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                    </span>
+
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="index-blog-sec">
+            <div class="container">
+                <div class="index-blog-heading" data-aos="zoom-in" data-aos-duration="800">
+                    <h3>Read my latest blog posts</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since...</p>
+                </div>
+                <ul class="row r1">
+                    <li class="col-md-6 col-lg-5 m-b-34" data-aos="fade-up" data-aos-duration="800">
+                        <div class="blog-1">
+                            <a href="blog.html">
+                                <figure style="background: url(images/myfour.jpg);background-position: center top;"></figure>
+                            </a>
+
+                            <a href="blog.html">
+                                <h4>Kyle and Johnson</h4>
+                                <span>jan 19,2016 / fashion, wedding</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-7 m-b-34" data-aos="fade-up" data-aos-duration="1100">
+                        <div class="blog-1 myblog">
+                            <a href="blog.html">
+                                <figure style="background: url(images/engage.jpg);"></figure>
+                            </a>
+                            <a href="blog.html">
+                                <h4>Susanne and Mathew</h4>
+                                <span>jan 19,2016 / fashion, wedding</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="row r2">
+                    <li class="col-md-6 col-lg-4 m-b-34" data-aos="fade-up" data-aos-duration="800">
+                        <div class="blog-2">
+                            <a href="blog.html">
+                                <figure style="background: url(images/finger.jpg);"></figure>
+                            </a>
+                            <a href="blog.html">
+                                <h4>Engagement of Suzi</h4>
+                                <span>jan 19,2016 / fashion, wedding</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-4 m-b-34" data-aos="fade-up" data-aos-duration="1100">
+                        <div class="blog-2">
+                            <a href="blog.html">
+                                <figure style="background: url(images/mysix.jpg);background-position:center top;"></figure>
+                            </a>
+                            <a href="blog.html">
+                                <h4>Engagement of Suzi</h4>
+                                <span>jan 19,2016 / fashion, wedding</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-md-6 col-lg-4 m-b-34" data-aos="fade-up" data-aos-duration="1400">
+                        <div class="blog-2 blog-21">
+                            <a href="blog.html">
+                                <figure style="background: url(images/lastimg.jpg);"></figure>
+                            </a>
+                            <a href="blog.html">
+                                <h4>Engagement of Suzi</h4>
+                                <span>jan 19,2016 / fashion, wedding</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="index-about" data-aos="fade-right" data-aos-duration="1000">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                                the industry's 1500s, when an unknown..</p>
+                            <b>andrew smith</b>
+                            <span>australia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                            <p>Lorem Ipsum is simply printing and typesetting industry. Lorem Ipsum has been the industry's
+                                1500s, when an unknown..</p>
+                            <b>andrew smith</b>
+                            <span>australia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                            <p>Printing and typesetting industry. Lorem Ipsum has been the industry's 1500s, when an unknown..</p>
+                            <b>andrew smith</b>
+                            <span>australia</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="index-contact">
+            <div class="container">
+                <ul class="row">
+                    <li class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="800">
+                        <h4>Contact us for Photography works</h4>
+                        <form>
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" placeholder="Your Email" required>
+                            <input type="text" placeholder="Your Phone Number" required>
+                            <textarea placeholder="Your Message" required></textarea>
+                            <button type="submit">alright submit it</button>
+                        </form>
+                    </li>
+                    <li class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="800">
+                        <div class="bookings">
+                            <h6> The Snappy Theme, 3rd Floor, Beside that building, USA </h6>
+                            <h6> Opening Hours :</h6>
+                            <span>Mon-Fri 11:00-00:00, Sat-Sun 15:00-00:00 </span>
+                            <h6>Call for Bookings </h6>
+                            <span>800 1234 56789</span>
+                            <h6>Support Email: </h6>
+                            <a href="https:www.template.net">info@Snappytheme.com</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footernav" data-aos="fade-up" data-aos-duration="800">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="technology.html">Technologies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Read Blog</a>
+                        </li>
+                    </ul>
+                    <p>
+                        (C) 2017, All Rights Reserved,
+                        <a href="https://www.template.net/editable/websites/html5">Snappy Theme,</a> Designed by
+                        <a href="https://www.template.net/editable/websites/html5">Template.net</a>
+                    </p>
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                    <div class="d-block d-sm-none" style="padding: 20px 0;">
+                        <span>
+                            <a href="https://www.facebook.com" class="m-r-15">
+                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.twitter.com" class="m-r-15">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.pinterest.com" class="m-r-15">
+                                <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.gmail.com" class="m-r-15">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="scrolltop" style="display: block;">
+        <div class="scroll icon">
+            <i class="fa fa-angle-up"></i>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="assests/js/jquery.countup.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <script>
+        function openNav() {
+            if (screen.width > 815) {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("mySidenav").style.opacity = "1";
+            } else {
+                document.getElementById("mySidenav").style.width = "200px";
+                document.getElementById("mySidenav").style.opacity = "1";
+            }
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.opacity = "0";
+        }
+
+        $(document).on('click', function (e) {
+            if ($(e.target).closest("#mySidenav, .slide-menu").length === 0) {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        });
+    </script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+
+</body>
+
+</html>
